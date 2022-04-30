@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CS Resources</title>
+
+    <link href="styles/default.css" media="screen" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet"/>
+    <script src="scripts/default.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    <!-- TODO -->
+    <!-- Replace these meta links with script to insert from 1 HTML file to only edit in 1 place -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Noah Gross, Daniel Petro, Jack McLaughlin, Jackson Williams, Nyree Baldwin" name="author">
+    <meta content="Homepage for CS resources website" name="description">
+    <meta content="all" name="robots">
+</head>
+
+<body class="content">
+<header id="banner" style="z-index: 1">
+    <button class="top-left">
+        <a href="home.html"><img alt="Wilson " class="homeBtnImage" src="images/WilsonCrest.png"></a>
+    </button>
+    <img alt="Diverse people involved in stem" src="images/k-16-diversity-header-0701.jpg" style="width: 100%">
+    <h1 class="title">Wilson STEM Academy<br>Computer Science Resources</h1>
+</header>
+<nav>
+    <div class="sidebar">
+        <a href="home.html">HOME</a>
+        <a class="selectedNavElem" href="student.html"><strong>STUDENTS</strong></a>
+        <a href="parent.html">PARENTS</a>
+        <a href="teacher.html">FACULTY</a>
+
+        <a href="yearOne.html">YEAR ONE MEDIA</a>
+    </div>
+</nav>
+<div class="mainPageBody">
+    <div></div>
+    <div style="width: 80%;">
+        <button class="studentCollapsible" id="collapsible" onclick="collapsible('collapsible')" type="button"> Python
+            Scratch Coding Example <em>+</em></button>
+        <div class="collapsibleContent">
+            <h2>How does code work</h2>
+            <p>Firstly it is important to note that different programming languages operate differently and as such have
+                different rules about what can and cannot be done with the language. In this example we will
+                specifically be
+                talking about
+                object orientated programming languages and their uses. Computer code follows a step-by-step process
+                of reading each line of its instruction written by the programmer and executing each instruction one at
+                a
+                time. This step-by-step process is done through a compiler that actually reads the written code and
+                turns it
+                into even more basic code that the machine can better understand.</p>
+            <img alt="Python code declaring a boolean variable and checking if true or not"
+                 src="images/isAwesomeEx.jpg">
+            <br>
+            <img alt="output of python code saying 'Wow! this is awesome'" src="images/IsAwesomeExOutput.jpg">
+            <p>In the image above the code is written in Python. We can see that each line of code is numbered and
+                contains
+                unique code that completes a set of
+                instructions. We can refer to a specific instruction by its line number, on line 1 some code is written
+                to
+                create a variable called isAwesome that holds in it a boolean value which can be either true or false,
+                on
+                this line we have set it to true. On line 3 there is an if statement which is a
+                component of python and many other languages that allows for a true or false comparison that when
+                evaluated
+                at
+                true runs the code inside its scope (the indented line(s) under it) and if false it skips over the
+                braces to
+                the next thing
+                written. Inside the if statement is written (isAwesome == true) this is a comparison that checks the
+                value
+                of the variable called isAwesome and checks to see if it's the same as true. If the comparison is true
+                then
+                we print out "Wow! this is awesome" and if it's false we print out "This doesn't seem very awesome."</p>
+            <p>Here is the same coding example except designed in scratch using block based coding.</p>
+            <img alt="scratch block program written to do the same thing as python example"
+                 src="images/ScratchBlockisAwesomeEx.jpg">
+
+            <img alt="scratch program output saying 'This is awesome'" src="images/ScratchBlockisAwesomeExOutput.jpg">
+        </div>
+        <br>
+        <button class="studentCollapsible" id="collapsible1" onclick="collapsible('collapsible1')" type="button">
+            Scratch Coding ideas <em>+</em></button>
+        <div class="collapsibleContent">
+<!--            <h3>Height and Weight Conversion Calculator</h3>-->
+            <h3>Draw a Flower</h3>
+            <p>The pen is a fantastic tool to use in Scratch as it emulates one of the most basic programs in computer
+                science, the turtle. In this scratch activity we will be using the pen tool to show off how simple loops
+                can lead to very pretty and pleasing designs. By the end of this activity you will have made something
+                that looks like the gif on the homepage of this website.</p>
+            <ul>
+                <li>Open up scratch.mit.edu from the "Online Resources" box to the right</li>
+                <li>Select the "Start Creating" button on the new page</li>
+                <li>In the bottom left-hand corner of the page there is a blue button, Click it</li>
+                <li>Now select the pen extension from the menu</li>
+                <li>Doing this gives us access to a new set of code blocks that allows us to use the pen tool</li>
+                <li>Now we can start creating our flower</li>
+            </ul>
+            <div style="display: flex; justify-content: space-around">
+                <ul id="slide" style="z-index: -1">
+                    <li><img alt="" class="slideImg"
+                             src="images/Scratch_pics/scratch1.jpg"
+                             title="First we want to get a feel for how the tools work, try experimenting with some of them to create something like the following."></li>
+                    <li><img alt="" class="slideImg"
+                             src="images/Scratch_pics/scratch2.jpg"
+                             title="As we can see this block of code doesn't really do much on its own. Lets try adding a loop around the outside of it that repeats 12 times."></li>
+                    <li><img alt="" class="slideImg"
+                             src="images/Scratch_pics/scratchpic1.jpg" title="Now with this we can see some of the drawing we made."></li>
+                    <li><img alt="" class="slideImg" src="images/Scratch_pics/scratch3.jpg"
+                             title="Let's try adding a turn onto the end"></li>
+                    <li><img alt="" class="slideImg"
+                             src="images/Scratch_pics/scratchpic2.jpg"
+                             title="This is a good start so far, lets try adding another identical looping code block onto the end"></li>
+                    <li><img alt="" class="slideImg" src="images/Scratch_pics/scratch4.jpg"
+                             title="How does our drawing look?"></li>
+                    <li><img alt="" class="slideImg"
+                             src="images/Scratch_pics/scratchpic3.jpg"
+                             title="Nice we completed one of the petals for our flower! Now we can add just a few more loops to finish it out. I know it looks like a lot but its just the same block copied and pasted onto the end of the overall program."></li>
+                    <li><img alt="" src="images/Scratch_pics/scratch5.jpg"
+                             title="This is a good start so far, lets try adding another identical looping code block onto the end">
+                    </li>
+                    <li><img alt="" class="slideImg"
+                             src="images/Scratch_pics/scratchpic4.jpg"
+                             title="Okay two petals. I was hoping for a bit more but since its just the same thing again I guess we only get one more petal. How about we loop the whole thing a couple of times. I also adjusted the last turn to be 200 instead of 120 to make the flower a little better looking to me."></li>
+                    <li><img alt="" class="slideImg" src="images/Scratch_pics/scratch6.jpg"
+                             title="Okay and now for the reveal!"></li>
+                    <li><img alt="" class="slideImg"
+                             src="images/Scratch_pics/scratchpic5.jpg" title="Wow that looks great! lets just get the cat out of the way and...">
+                    </li>
+                    <li><img alt="" class="slideImg"
+                             src="images/Scratch_pics/scratchpic6.jpg"
+                             title=" Congratulations! It looks awesome, but you know what would improve it? Making the flower multicolored! I'll leave that to you, enjoy your flower!"></li>
+                </ul>
+                <div style="background-color: lightgreen; width: 50%; max-height: 219px; padding: 1%">
+                    <h2>Use the arrows on the slides to the left to progress through the activity and change this text!</h2>
+                    <p id="captionP">
+                        first we want to get a feel for how the tools work, try experimenting with some of them to create something like the following.
+                    </p>
+                </div>
+            </div>
+            <h3></h3>
+        </div>
+    </div>
+    <div class="links">
+        <div>
+            <h2>Online Resources </h2>
+            <ul>
+                <li><a href="https://www.codecademy.com/" target="_blank">www.codecademy.com</a></li>
+                <li><a href="https://www.codecademy.com/article/what-is-programming" target="_blank">Code Academy: "What
+                    is Programming?"</a></li>
+                <li><a href="https://edublocks.org/" target="_blank">Edublocks.org</a></li>
+                <li><a href="https://scratch.mit.edu" target="_blank">Scratch.mit.edu</a></li>
+                <li><a href="https://kitronik.co.uk/blogs/resources/getting-started-edublocks-microbit" target="_blank">Edublocks:
+                    "Getting Stared"</a></li>
+                <li>
+                    <a href="https://cdn.scratch.mit.edu/scratchr2/static/__709da8e5f3d72129538a4ccdbcbf5f2a__/pdfs/help/Getting-Started-Guide-Scratch2.pdf "
+                       target="_blank">Getting
+                        Started with Scratch PDF</a></li>
+                <li><a href="https://code.org/" target="_blank">Code.org</a></li>
+            </ul>
+
+        </div>
+        <div>
+            <h2>IPASS Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://docs.google.com/presentation/d/1qsSK98UWntAypYLTCCSNnilEUineZ2Ja-fXpHvAK3l8/edit?usp=sharing"
+                       target="_blank">Wilson
+                        Python Session 1 Google Sides</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

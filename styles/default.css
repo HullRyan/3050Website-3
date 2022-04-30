@@ -1,0 +1,311 @@
+/* The side navigation menu */
+nav {
+    margin: 0;
+    padding: 0;
+    width: 7%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    background-color: #972817;
+    border-top-right-radius: 10px;
+    font-size: 15px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    text-align: left;
+}
+
+.studentBox {
+    /**box-shadow: 0 0 10px 5px;**/
+    transition: box-shadow .3s;
+}
+
+.studentBox:hover{
+    box-shadow: 0 0 10px 5px rgba(44,44,45,.8);
+}
+
+.parentBox {
+    /**box-shadow: 0 0 10px 5px;**/
+    transition: box-shadow .3s;
+}
+
+.parentBox:hover{
+    box-shadow: 0 0 10px 5px rgba(44,44,45,.8);
+}
+
+.teacherBox {
+    /**box-shadow: 0 0 10px 5px;**/
+    transition: box-shadow .3s;
+}
+
+.teacherBox:hover{
+    box-shadow: 0 0 10px 5px rgba(44,44,45,.8);
+}
+
+.slideImg{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+h1 {
+    font-family: "";
+    font-weight: bold;
+    font-size: 2.5vw;
+    color: #c01919;
+}
+
+nav {
+    min-width: 140px;
+}
+
+/* Sidebar links */
+nav a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+/* Active/current link */
+nav a.active {
+    background-color: #972817;
+    color: white;
+    border-radius: 20px;
+    width: 70%;
+}
+
+/* Links on mouse-over */
+nav a:hover:not(.active) {
+    background-color: #54585A;
+    color: white;
+    border-radius: 20px;
+    width: 65%;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 10%;
+    padding: 1px 16px;
+}
+
+.selectedNavElem {
+    background-color: #54585A;
+    border-radius: 20px;
+    width: 65%;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.homeBtnImage {
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    min-width: 100%;
+}
+
+.top-left {
+    position: absolute;
+    top: 1%;
+    left: .5%;
+    border-radius: 20%;
+    max-width: 7%;
+    border-color: #972817;
+    border-width: 2px;
+    border-style: solid;
+    z-index: 2;
+}
+
+body {
+    margin: 0;
+    background-color: #d7d7dc;;
+}
+
+.media {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.captions {
+    background-color: #c1c1c4;
+    padding: 1%;
+}
+
+#captions {
+    background-color: #c1c1c4;
+    padding: 1%;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.grid {
+    display: grid;
+    column-gap: 1%;
+    row-gap: 1%;
+    justify-content: center;
+    margin-right: 12%;
+    margin-left: 20%;
+}
+
+.two {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.three {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.four {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.mainPageBody {
+    margin-left: max(7%, 140px);
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Open Sans";
+}
+
+#banner {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content {
+    padding-top: 11.5%;
+}
+
+.captions {
+    text-align: center;
+}
+
+.studentCollapsible {
+    background-color: rgb(247,235,127);
+    cursor: pointer;
+    padding: 4px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.parentCollapsible {
+    /*rgb(0, 95, 225);*/
+    background-color: dodgerblue;
+    cursor: pointer;
+    padding: 4px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.facultyCollapsible {
+    background-color: rgb(88,236,142);
+    cursor: pointer;
+    padding: 4px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.studentCollapsible:hover, .studentCollapsibleActive {
+    background-color: rgb(229, 218, 117);
+}
+
+.parentCollapsible:hover, .parentCollapsibleActive {
+    background-color: rgb(0, 82, 192);
+}
+
+.facultyCollapsibleActive, .facultyCollapsible:hover {
+    background-color: rgb(65, 178, 106);
+}
+
+.collapsibleContent {
+    background-color: #bab7b7;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+p {
+    text-indent: 5%;
+    font-size: 18px;
+}
+ul{
+    font-size: 18px;
+}
+
+.links {
+    background-color: #56cbc7;
+    height: fit-content;
+    border-radius: 10px;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    max-width: 15%;
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.graph {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 1%;
+}
+
+.graphWrapper {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+}
